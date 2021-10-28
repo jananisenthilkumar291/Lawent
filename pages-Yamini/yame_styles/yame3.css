@@ -1,0 +1,313 @@
+body{
+    background-color: aliceblue;
+}
+.image-sec{
+    background:rgba(0,0,0,0.7)url("../yame_image/w1.jpg");
+    background-blend-mode:darken ;
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+.first-sec{
+    position: absolute;
+    top:40%;
+    color: white;
+    justify-content: space-between;
+    margin-left: 15px;
+
+}
+.h1tag{
+    font-size: 60px;
+}
+.list{
+    display: flex;
+    justify-content: right;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 20px;
+    padding-left:0px ;
+    padding-right: 17px;
+    padding-top: 20px;
+    margin-left:900px;
+    margin-top: 0;
+    font-size: 21px;
+}
+.icon{
+    color: black;
+    padding-left: 6px;
+}
+ol > li{
+    list-style-type: none;
+}
+li > a{
+    text-decoration: none;
+    color: black;
+    padding-left: 8px;
+}
+.item1{
+    color: tomato;
+}
+.item2{
+    color: gray;
+}
+
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width:90%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 17px;
+    transition: 0.4s;
+    border:1px solid black;
+    margin-bottom: 6px;
+  }
+  .accordio {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width:90%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+    border:1px solid black;
+    margin-bottom: 6px;
+  }
+  
+  .active, .accordion:hover {
+    background-color:#ca9b5f;
+    color: white;
+  }
+  .active, .accordio:hover {
+    background-color: #ccc;
+  }
+  .active, .accordio.on:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion::after {
+    content: '\002B';
+    color:#777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    
+  }
+  .accordio::after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+   
+  }
+  
+.active::after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    width: 90%;
+    color: grey;
+    transition: max-height 0.2s ease-out;
+    font-size: 15px;
+  }
+  .pannel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    width: 90%;
+    color: grey;
+    transition: max-height 0.2s ease-out;
+    font-size: 13px;
+  }
+  .pannel.on{
+      background-color:#ccc;
+      color: black;
+  }
+  .accordion.on{
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width:90%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        margin-bottom: 6px;
+      }
+      .accordio.on{
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width:90%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        margin-bottom: 6px;
+      }
+      .border{
+          border: 1px solid black;
+          box-sizing: content-box;
+      }
+
+      .contact-sec{
+          background:rgba(0,0,0,0.7)url("w2.jpg");
+          width: 100%;
+          height: 800px;
+          background-repeat: repeat;
+          background-blend-mode:darken ;
+          position: relative;
+      }
+      .firstsec{
+          margin-top:8%;
+          margin-left: 40px;
+      }
+      .card.or{
+          height: 370px;
+          border : 1ps solid white;
+          border-radius: 30px;
+          background-color: rgb(15, 27, 55);
+          color: white;
+      }
+      .card-title{
+           display: flex;
+           justify-content:center;
+           align-items: center;
+          font-size: 35px;
+      }
+      .ico{
+          border: 1px solid blue;
+          border-radius: 50%;
+          padding: 18px;
+          background-color: white;
+          color: black;
+      }
+      .icoo{
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 10px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .card.or:hover{
+        transform: translateY(-5px) scale(1.007) translateZ(0);
+    }
+    .card.or:hover .icoo{
+        color: tomato;
+        animation: mymove 5s ;
+      }
+    @keyframes mymove{
+       50%{transform : rotate(60deg);}
+     
+    }
+      
+      .card-subtitle.mb-2{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+       font-size: 25px;
+      }
+      .card-text{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        margin-left: 3px;
+        padding: 5px;
+      }
+      .icontag{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        margin-top: 30px;
+      }
+      .h5tag{
+          color: #ca9b5f;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          padding-top: 10%;
+      }
+      .h2tag{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        font-size: 58px;
+      }
+
+
+
+      @media (max-width: 800px){
+          .d-flex.or{
+              flex-direction: column;
+          }
+         
+          p > a{
+            margin-left: 0;
+          }
+          .image-sec{
+              width: 100%;
+        }
+        .h1tag{
+            font-size: 40px;
+        }
+        .list{
+            margin-left: 0;
+        }
+        .d-flex.first-sec{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .d-flex.or{
+            flex-direction: column;
+        }
+        .card.or{
+            margin-left: 0;
+            margin-bottom: 15px;
+            width:20rem !important;
+        }
+        .firstsec{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0;
+        }
+        .h2tag{
+            font-size: 45px;
+        }
+        .contact-sec{
+            height: 1450px;
+        }
+        .accordions{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        }
+     
+    
