@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <head>
+            <title>Case Study Detail</title>
+            <link href="../css/css-circular-prog-bar.css" rel="stylesheet">
+            <link rel = "stylesheet" type = "text/css" href = "../css/caseStudyDetails.css">
+            <!-- <link rel = "stylesheet" type = "text/css" href = "../css/practiseArea1.css"> -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+            <script src="https://kit.fontawesome.com/b2216cfcd3.js" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+            <style>                
+                * {
+                  box-sizing: border-box;
+                }
+                
+                .row > .column {
+                  padding: 0 8px;
+                }
+                .row:after {
+                  content: "";
+                  display: table;
+                  clear: both;
+                }
+                .column {
+                  float: left;
+                  width: 33%;
+                }
+                .modal {
+                  display: none;
+                  position: fixed;
+                  z-index: 1;
+                  padding-top: 100px;
+                  left: 0;
+                  top: 0;
+                  width: 100%;
+                  height: 100%;
+                  overflow: auto;
+                  background-color: black;
+                }
+                .modal-content {
+                  position: relative;
+                  background-color: #fefefe;
+                  margin: auto;
+                  padding: 0;
+                  width: 90%;
+                  max-width: 1200px;
+                }
+                .close {
+                  color: white;
+                  position: absolute;
+                  top: 10px;
+                  right: 25px;
+                  font-size: 35px;
+                  font-weight: bold;
+                }
+                .close:hover,
+                .close:focus {
+                  color: #999;
+                  text-decoration: none;
+                  cursor: pointer;
+                }
+                .mySlides {
+                  display: none;
+                }
+                
+                .cursor {
+                  cursor: pointer;
+                }
+                .prev,.next {
+                  cursor: pointer;
+                  position: absolute;
+                  top: 50%;
+                  width: auto;
+                  padding: 16px;
+                  margin-top: -50px;
+                  color: white;
+                  font-weight: bold;
+                  font-size: 20px;
+                  transition: 0.6s ease;
+                  border-radius: 0 3px 3px 0;
+                  user-select: none;
+                  -webkit-user-select: none;
+                }
+                .next {
+                  right: 0;
+                  border-radius: 3px 0 0 3px;
+                }
+                .prev:hover,.next:hover {
+                  background-color: rgba(0, 0, 0, 0.8);
+                }
+                .numbertext {
+                  color: #f2f2f2;
+                  font-size: 12px;
+                  padding: 8px 12px;
+                  position: absolute;
+                  top: 0;
+                }
+                
+                .ii {
+                  /* margin-bottom: -4px; */
+                  border-radius: 20px;
+                }
+                .iii{
+                    width:50%;
+                }
+                
+                .caption-container {
+                  text-align: center;
+                  background-color: black;
+                  padding: 2px 16px;
+                  color: white;
+                }
+                
+                .demo {
+                  opacity: 0.6;
+                }
+                
+                .active,
+                .demo:hover {
+                  opacity: 1;
+                }
+                
+                img.hover-shadow {
+                  transition: 0.3s;
+                }
+                
+                .hover-shadow:hover {
+                  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                }
+                </style>
+        </head>
+    </head>
+    <body>
+        <div class = "top">
+            <div class = "container">
+                <div class = "row mb-2">
+                    <div class = "col-md-1"></div>
+                    <div class = "col-md-3">
+                        <h1> Case Study</h1>
+                    </div>
+                    <div class = "col-md-4"></div>
+                    <div class = "col-md-3 btngrp">
+                        <button onclick="window.open('../../../../index.html','_parent')" class = "btn1">Home</button>
+                        <button class = "btn2">Case Study</button>
+                    </div>
+                    <div class = "col-md-1"></div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+
+        <div class = "full">
+            <div class = "row mb-2 ">
+                <div class = "col-md-9">
+                    <img style = "width:100%;" src = "https://primehostingindia.com/templatemonster/html/lawent/assets/img/projects/details/2.jpg"/>
+                    <br><br>
+                    <div class = "row mb-2"><br><br>
+                        <div class = "col-md-1 aavatar">L</div>
+                        <div class = "col-md-11">A law firm is a business entity formed by one or more lawyers to engage in the practice of law. The primary service rendered by a law firm is to advise clients individuals or corporations about their legal rights and responsibilities.</div>
+                    </div><br>
+                    <p>In many countries, including the United States, there is a rule that only lawyers may have an ownership interest in, or be managers of, a law firm. Thus, law firms cannot quickly raise capital through initial public offerings on the stock market, like most corporations.</p>
+                    <br><br><h1>Our Challenges</h1>
+                    <br><br>
+                    <div class = "row mb-2">
+                        <div class = "col-md-6 " style = "background-color: white;padding:10px;border-radius: 10px;border:5px solid rgb(246, 244, 244);">
+                            <div class = "row mb-2">
+                                <div class = "col-md-2">
+                                    <img style = "width:100%" src = "../scale.png"/>
+                                </div>
+                                <div class = "col-md-10">
+                                    <h2>Business Law</h2>
+                                    <h6>Business law deals with the creation of new businesses</h6><br><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "col-md-6"  style = "background-color: white;padding:10px;border-radius: 10px;border:5px solid rgb(246, 244, 244);">
+                            <div class = "row mb-2">
+                                <div class = "col-md-2">
+                                    <img style = "width:100%" src = "../government-building.png"/>
+                                </div>
+                                <div class = "col-md-10">
+                                    <h2>Educational Law</h2>
+                                    <h6>Education law attorneys help their clients solve issues</h6><br><br>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div><br><br>
+                    <p>In the United States this complete bar to nonlawyer ownership has been codified by the American Bar Association as paragraph of Rule 5.4 of the Model Rules of Professional Conduct and has been adopted in one form or another in all U.S. jurisdictions, except the District of Columbia However, D.C.'s rule is narrowly tailored to allow equity ownership only by those nonlawyer partners who actively assist the firm's lawyers in providing legal services, and does not allow.</p>
+                    <br><br><div class="rdw">
+                        <div class = "row mb-3">
+                            <div class = "col-md-2">
+                                <img style = " width:90%;"src = "https://primehostingindia.com/templatemonster/html/lawent/assets/img/team/2.jpg"/>
+                            </div>
+                            <div class = "col-md-10">
+                                <p>We’re proud that our law firm offers top-notch legal services for a nationwide affordable pricing! With us you’ll never feel like the lawyers are just robbers in suits, besides, we win 98% of all cases.</p>
+                                <h2>Rosalina D. William</h2>
+                                <h6>Founder</h6>
+                            </div>
+                        </div>
+                    </div><br><br><br>
+                    <div class = "row mb-2">
+                        <div class = "col-md-4">
+                            <img style = "width:100%;border-radius:10px;"src = "https://primehostingindia.com/templatemonster/html/lawent/assets/img/projects/details/3.jpg"/>
+                        </div>
+                        <div class = "col-md-8">
+                            The rule is controversial. It is justified by many in the legal profession, notably the American Bar Association which rejected a proposal to change the rule in its Ethics 2021 reforms.
+                        </div>
+                    </div>
+                    <br><br>
+                    <h2>Our Progress</h2><br>
+                    <h6>Law firms are typically organized around partners, who are joint owners and business directors of the legal operation; associates, who are employees of the firm with the prospect of becoming partners; and a variety of staff employees, providing paralegal, clerical, and other support services.</h6>
+                    <br><br>
+
+                    <div class="row">
+                        <div class="column">
+                          <img src="https://primehostingindia.com/templatemonster/html/lawent/assets/img/service/details/4.jpg" class = " ii" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        </div>
+                        <div class="column">
+                          <img src="https://primehostingindia.com/templatemonster/html/lawent/assets/img/service/details/3.jpg" class = " ii" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                        </div>
+                        <div class="column">
+                          <img src="https://primehostingindia.com/templatemonster/html/lawent/assets/img/service/details/2.jpg" class = " ii" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                        </div>
+                      </div>
+                      
+                      <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                      
+                          <div class="mySlides">
+                            <img class = "iii" src="https://primehostingindia.com/templatemonster/html/lawent/assets/img/service/details/4.jpg">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <img class = "iii" src="https://primehostingindia.com/templatemonster/html/lawent/assets/img/service/details/3.jpg">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <img class = "iii"  src="https://primehostingindia.com/templatemonster/html/lawent/assets/img/service/details/2.jpg">
+                          </div>
+                          
+                          
+                          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                      
+                          <div class="caption-container">
+                            <p id="caption"></p>
+                          </div>
+                        </div>
+                      </div><br><br>
+                    <br><br><button class = "leftbtn"><h4><b>Law is a general</b><br>Prev Project</h4></button>
+                    <button class = "rightbtn"><h4><b>Law is a general</b><br>Next Project</h4></button>
+                    
+                </div>
+                <div class = "col-md-3" style = "text-align: center;">
+                    <h4>Law Details</h4><br><br><h5><b>Client:</b></h5>
+                    <h6 style = "color:grey;font-weight: 400;">Miranda H. Hallim</h6><br><hr><br>
+                    <h5><b>Location:</b></h5>
+                    <h6 style = "color:grey;font-weight: 400;">Dubai</h6><br><hr><br>
+                    <h5><b>Catogery:</b></h5>
+                    <h6 style = "color:grey;font-weight: 400;">Fees</h6><br><hr>
+                    <br><br>
+                    <div class = "secondRight">
+                        <h4>Request A Quote</h4><br><br>
+                        <p>We know what is to defend rights. We work with people, for peoplWe know what is to defend rights. We work with people, for peopl</p>
+                        <br><button>Get A Quote</button><br>
+                    </div><br><br>
+                    <div class = "thirdRight"><br><br>
+                        <h4>Project Assets</h4>
+                        <br><br><button>Download pdf</button>
+                        <br><br><button>Download Documents</button>
+                        <br><br><button>Download Brochures</button><br><br>
+                    </div><br>
+                    <div><img src = "https://primehostingindia.com/templatemonster/html/lawent/assets/img/service/details/ad.jpg"/></div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <div class = "footer">
+            <div class = "container"><br><br><br>
+               <div class = "row mb-2">
+                   <div class = "col-md-3">
+                       <img src = "https://primehostingindia.com/templatemonster/html/lawent/assets/img/logo-2.png" />
+                   </div>
+                   <div class = "col-md-6">
+                       <a>Home</a>
+                       <a>About</a>
+                       <a>Blog</a>
+                       <a>Contacts</a>
+                   </div>
+                   <div class = "col-md-1"><i class="fab fa-facebook"></i></div>
+                   <div class = "col-md-1"><i class="fab fa-twitter"></i></div>
+                   <div class = "col-md-1"><i class="fab fa-instagram"></i></div>
+               </div>
+               <br><br><hr><br><br>
+               <h2>Subscribe To Our Newsletter</h2><br>
+               <input placeholder="Enter Your Email"/><button class = "submit">Submit</button><br>
+               <p>*Strategies Of Our Attorneys will help you solve  very complex legal issues</p>
+               <br><br>
+               <hr>
+               <p>&copy;Lawent 2021 Made With Love</p>
+           </div>
+           
+        </div>
+
+
+        <script>
+            function openModal() {
+              document.getElementById("myModal").style.display = "block";
+            }
+            
+            function closeModal() {
+              document.getElementById("myModal").style.display = "none";
+            }
+            
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
+
+    </body>
+</html>

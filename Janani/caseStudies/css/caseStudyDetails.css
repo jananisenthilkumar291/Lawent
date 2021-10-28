@@ -1,0 +1,129 @@
+h1,h2,h3,h4,h5,h6{
+    font-family: "Playfair Display", serif;
+    margin: 0 0 20px;
+    line-height: 1.2;
+    
+}
+
+
+
+.top{
+    background-image:url("../topimage.jpg");
+    padding:50px;
+    /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+    color:#0f1b37;
+    height:300px;
+    text-align: center;
+}
+.btngrp{
+    height:50px;
+    border-radius:25px;
+    background-color:white;
+}
+.btn1{
+    border-left:2px solid grey;
+    background-color: transparent;
+    border-color: transparent;
+}
+.btn2{
+    background-color: transparent;
+    border-color: transparent;
+}
+.secondRight{
+    background-color: #0f1b37;
+    color:white;
+    padding:20px;
+}
+button{
+    background-color:#CA9B5F;
+    height:50px;
+    border-radius:25px;
+    border-color:transparent;
+}
+.aavatar{
+    width: 100%;
+    border-radius: 50%;
+    background-color: #CA9B5F;
+    color:white;
+    font-size: 50px;
+    text-align: center;
+}
+.thirdRight > button{
+    background-color:white;
+    border:1px solid grey;
+    width:90%;
+    border-radius: 25px;
+    height:50px;
+}
+.thirdRight{
+    background-color: rgb(233,233,233);
+    border-radius:10px;
+}
+.latest{
+    background-color:white;
+    border:1px solid grey;
+    width:90%;
+    border-radius: 25px;
+    height:50px;
+    padding:5px;text-align: center;
+}
+.latest:hover{
+    background-color: #CA9B5F;
+}
+.full{
+    width:80%;
+    margin-left:10%;
+    text-align: center;
+    /* background-color: rgb(243, 243, 243); */
+    padding:5px;
+    
+}
+.leftbtn{
+    width:49%;
+    height:70px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color:#0f1b37;
+    border-color:transparent;
+    color:white;
+    padding:10px;
+}
+.rightbtn{
+    width:50%;
+    height:70px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color:#0f1b37;
+    border-color:transparent;
+    color:white;
+    padding:10px;
+}
+.rdw{
+    background-color: #0f1b37;
+    border-radius:20px;
+    color:white;
+    padding:20px;
+    height:200px;
+}
+.footer{
+    text-align: center;
+    background-color:#0F1B37;
+    color:white;
+}
+.footer > p{
+    color:grey;
+}
+input{
+    height:50px;
+    border-top-left-radius:25px;
+    border-bottom-left-radius:25px;
+    border-color:transparent;
+    width:50%;
+}
+.submit{
+    background-color:#CA9B5F;
+    height:50px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-color:transparent;
+}
