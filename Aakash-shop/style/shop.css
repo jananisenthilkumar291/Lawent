@@ -1,0 +1,191 @@
+.mainPart {
+  width: 73%;
+  padding: 50px;
+  padding-top: 0;
+}
+.sidePart {
+  width: 25%;
+}
+.block {
+  border: 2px solid #ebebeb;
+  padding: 15px 5px;
+  margin-bottom: 15px;
+}
+.side-title {
+  margin-left: 50px;
+}
+.side-title::before,
+.side-title::after {
+  content: '';
+  background-color: #ca9b5f;
+  width: 20px;
+  height: 3px;
+  position: absolute;
+  left: -35px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 4px;
+}
+.side-title::after {
+  left: -10px;
+  width: 5px;
+}
+.block.search input,
+.block.search button {
+  border-radius: initial;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border: none;
+  background-color: #efefef;
+}
+.block.search button {
+  border-radius: initial;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: #ca9b5f;
+}
+.block.search input:focus {
+  outline: none;
+}
+.result {
+  justify-content: space-between;
+  font-family: sans-serif;
+}
+.categories .breadcrumb {
+  display: block;
+  background-color: #efefef;
+  margin-bottom: 20px;
+}
+.dot {
+  border-radius: 50%;
+  background-color: #ca9b5f;
+  padding: 8px;
+  right: 7px;
+  top: 7px;
+  color: white;
+}
+.pagination {
+  text-align: center; 
+}
+.pagination .dot {
+  border: 1px solid #efefef;
+  color: #0f1b37;
+  padding: 15px 20px;
+  margin-right: 5px;
+  background-color: transparent;
+}
+.pagination .dot:hover,
+.pagination .active {
+  background-color: #0f1b37;
+  border-color: #0f1b37;
+  color: white;
+}
+
+@keyframes example {
+  from {top:-100px;opacity: 0;}
+  to {top:0px;opacity:1;}
+}
+/* The modal's background */
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Display the modal when targeted */
+.modal:target {
+  display: table;
+}
+
+/* The modal box */
+.modal-dialog {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* The modal's content */
+.modal-dialog .modal-content {
+  margin: auto;
+  background-color: #f3f3f3;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  border: 1px #777 solid;
+  text-align: justify;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  /* Add animation */
+  -webkit-animation-name: example; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+  animation-name: example;
+  animation-duration: 0.5s;
+}
+
+/* The button used to close the modal */
+.closebtn {
+  text-decoration: none;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+  color: #aaa;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+	border: 1px solid #ca9b5f !important;
+	background: #ca9b5f !important;
+	font-weight: normal;
+	color: #ffffff;
+}
+#slider-range > span:nth-child(3):focus-visible,
+#slider-range > span:nth-child(2):focus-visible {
+  outline: none;
+}
+
+@media screen and (max-width:850px) {
+  .mainPart {
+    width: 62%;
+  }
+  .sidePart {
+    width: 35%;
+  }
+}
+@media screen and (max-width:600px) {
+  .content.flex {
+    flex-direction: column;
+  }
+  .mainPart {
+    width: 90%;
+    margin: auto;
+  }
+  .sidePart {
+    width: 90%;
+    margin: auto;
+  }
+}

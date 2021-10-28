@@ -1,0 +1,12 @@
+#cartTable .breadcrumb {
+  color: white;
+  background-color: #5faaca;
+  border: none;
+  transition: all 0.2s;
+}
+#cartTable .breadcrumb:hover {
+  background-color: #1d759b;
+}
+.cart-item td:nth-of-type(4) {
+  color: rgb(41, 193, 41);
+}

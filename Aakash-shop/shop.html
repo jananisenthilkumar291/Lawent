@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shop</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style/shop.css" />
+    <link rel="stylesheet" href="style/prodCSS.css" />
+    <link rel="stylesheet" href="style/prod-detail.css" />
+    <link rel="stylesheet" href="style/gen.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <style>
+      .prod-style .breadcrumb:hover {
+        background-color: #0f1b37;
+        border-color: #0f1b37;
+        color: white;
+      }
+      .prod-style .breadcrumb:nth-of-type(1):hover {
+        background-color: #ca9b5f;
+        border-color: #ca9b5f;
+      }
+    </style>
+    <script src="script/products.js"></script>
+    <script src="script/cart.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $("#slider-range").slider({
+          range: true,
+          min: 0,
+          max: 500,
+          values: [10, 100],
+          slide: function (event, ui) {
+            $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+          },
+        });
+        $("#amount").val(
+          "$" +
+            $("#slider-range").slider("values", 0) +
+            " - $" +
+            $("#slider-range").slider("values", 1)
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <div class="header rel">
+      <div class="background abs"></div>
+      <div class="header-container flex abs">
+        <h1 style="font-size: 3em">Shop</h1>
+        <p class="breadcrumb">
+          <a href="../index.html">Home</a> |
+          <a href="#" style="color: #ca9b5f">Shop</a>
+        </p>
+      </div>
+    </div>
+    <br /><br /><br />
+    <div class="content flex">
+      <div class="mainPart">
+        <div class="result flex">
+          <h4>Showing 12 results of 300 results</h4>
+          <h4>
+            Filter <span style="color: #ca9b5f" class="fa fa-filter"></span>
+          </h4>
+        </div>
+        <hr style="border: 1px solid #efefef" />
+        <br /><br />
+        <div class="prod-container flex"></div>
+        <br /><br /><br />
+        <div class="pagination">
+          <a href="#" class="dot bold large">1</a>
+          <a href="#" class="dot bold large active">2</a>
+          <a href="#" class="dot bold large">3</a>
+        </div>
+      </div>
+      <div class="sidePart">
+        <div class="block search">
+          <h2 class="side-title rel">Search</h2>
+          <div style="width: 100%" class="flex">
+            <input
+              style="width: 100%"
+              class="breadcrumb"
+              type="text"
+              placeholder="Look for products"
+            />
+            <button
+              style="width: 50px; color: white"
+              class="fa fa-search breadcrumb"
+              type="submit"
+            ></button>
+          </div>
+        </div>
+        <div class="block price">
+          <h2 class="side-title rel">Price</h2>
+          <p>
+            <label for="amount">Range:</label>
+            <input
+              type="text"
+              id="amount"
+              readonly
+              style="border: 0; color: #ca9b5f; font-weight: bold"
+            />
+          </p>
+
+          <div id="slider-range"></div>
+        </div>
+        <div class="block categories">
+          <h2 class="side-title rel">Our Categories</h2>
+          <a class="breadcrumb bold rel" href="#"
+            >Attorneys <span class="dot abs smaller">32</span></a
+          >
+          <a class="breadcrumb bold rel" href="#"
+            >Criminal Law <span class="dot abs smaller">22</span></a
+          >
+          <a class="breadcrumb bold rel" href="#"
+            >Employement Law <span class="dot abs smaller">17</span></a
+          >
+          <a class="breadcrumb bold rel" href="#"
+            >Family Law <span class="dot abs smaller">05</span></a
+          >
+        </div>
+      </div>
+    </div>
+    <div id="quick-view" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <a href="javascript:history.back()" class="closebtn">×</a>
+          <div class="content flex">
+            <div class="left">
+              <div class="full-photo">
+                <div class="image">
+                  <img src="img/item01.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <p>
+                <span class="cost bold">30$ </span
+                ><span class="old-cost"> 40$</span>
+              </p>
+              <p>
+                <span class="fa fa-star active"></span>
+                <span class="fa fa-star active"></span>
+                <span class="fa fa-star active"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa smaller">&nbsp;&nbsp; 255 reviews</span>
+                <br /><br />
+              </p>
+              <hr
+                style="
+                  border-top: 1px solid #efefef;
+                  border-bottom: transparent;
+                "
+              />
+              <p class="detail-descrip">
+                Donec sollicitudin molestie malesuada. Nulla porttitor accumsan
+                tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus
+                et ultrices posuere cubilia Curae; Donec velit neque,
+              </p>
+              <br />
+              <p class="detail bold">
+                <span class="bold">Product SKU: </span> #3382dk
+              </p>
+              <p class="detail bold">
+                <span class="bold">Availablity: </span> In stock
+              </p>
+              <p class="detail">
+                <span class="bold">Tags: </span> Fashion, Food, Classic
+              </p>
+              <br />
+              <hr
+                style="
+                  border-top: 1px solid #efefef;
+                  border-bottom: transparent;
+                "
+              />
+              <div class="prod-style flex">
+                <div class="breadcrumb bold">
+                  Buy now &nbsp;&nbsp;<span
+                    class="fa fa-shopping-basket"
+                  ></span>
+                </div>
+                <div class="breadcrumb bold">
+                  Wishlist &nbsp;&nbsp;<span class="fa fa-heart-o"></span>
+                </div>
+                <div class="breadcrumb bold">
+                  Compare &nbsp;&nbsp;<span class="fa fa-compress"></span>
+                </div>
+              </div>
+              <br /><br />
+              <div class="social-share">
+                <span style="color: black" class="bold">Share</span>
+                &nbsp;&nbsp;&nbsp;
+                <a href="#" class="fa fa-facebook"></a>&nbsp;&nbsp;&nbsp;
+                <a href="#" class="fa fa-linkedin"></a>&nbsp;&nbsp;&nbsp;
+                <a href="#" class="fa fa-twitter"></a>&nbsp;&nbsp;&nbsp;
+                <a href="#" class="fa fa-youtube-play"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      for (let i = 0; i < items.length; i++) {
+        makeItem(items[i]);
+      }
+    </script>
+    <script>
+      let products = document.querySelectorAll(".prod");
+      for (let i = 0; i < products.length; i++) {
+        products[i]
+          .querySelector('[title="Add to Cart"]')
+          .addEventListener("click", function () {
+            let a, b, c;
+            a = products[i].querySelector(".large").innerHTML;
+            b = products[i].querySelector(".prod-cost").innerHTML.slice(1);
+            c = products[i].querySelector(".img").getAttribute("src");
+            storeItem(a, b, c);
+            console.log(a, b, c);
+          });
+        products[i]
+          .querySelector('[title="Add to Wishlist"]')
+          .addEventListener("click", function () {
+            let a, b, c;
+            a = products[i].querySelector(".large").innerHTML;
+            b = products[i].querySelector(".prod-cost").innerHTML.slice(1);
+            c = products[i].querySelector(".img").getAttribute("src");
+            storeWishItem(a, b, c);
+          });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+table {
+  margin: auto;
+  width: 90%;
+}
+table, td, th {
+  border: 1px solid #efefef;
+  border-collapse: collapse;
+  padding: 15px 10px;
+}
+th {
+  text-align: left;
+}
+td {
+  padding: 5px 10px;
+}
+table td:nth-child(1) {
+  text-align: center;
+}
+table td:nth-child(3),
+table td:nth-child(5) {
+  font-weight: bold;
+}
+table .breadcrumb {
+  border: 2px solid #eaeaea;
+}
+table .breadcrumb:focus {
+  outline: none;
+}
+.imageIcon {
+  width: 70px;
+  display: inline-block;
+}
+.imageIcon img {
+  width: 100%;
+  vertical-align: middle;
+}
+#quantity {
+  font-weight: bold;
+  color: black;
+  width: 100%;
+}
+.emptyCart {
+  text-align: center;
+}
+.emptyCart .breadcrumb.bold.xl {
+  border: 2px solid #ca9b5f;
+  background-color: #ca9b5f;
+  color: white;
+  display: inline-block;
+}
+.checkout {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-top: 20px;
+  background-color: #ca9b5f;
+  color: white;
+  border-radius: 25px;
+}
+.checkout:hover {
+  background-color: #a06c27;
+  transform: translate(0, 3px);
+}
